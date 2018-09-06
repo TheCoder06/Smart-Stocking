@@ -1,2 +1,2 @@
-# Smart-Stocking
+# SmartStocking
 Search. Learn. Invest with SmartStocking 
