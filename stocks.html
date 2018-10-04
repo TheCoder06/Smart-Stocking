@@ -62,13 +62,560 @@
 <div class="nav">
   <a id="logo" href="#SmartStocking">SmartStocking</a>
   <a href="index.html">Home</a>
-  <a class="active"href="stocks.html">Current Valuations </a>
+  <a class="active" href="stocks.html">Current Valuations </a>
   <a href="program.html">Stock Analysis</a>
 </div>
   <div style="padding-left:16px">
   <h2>Example Text</h2>
   <p>Some content..</p>
 </div>
+
+<!-- Stock Tracker Begin -->
+
+<div>
+ 
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Market Data</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  {
+  "showChart": true,
+  "locale": "en",
+  "largeChartUrl": "",
+  "width": "400",
+  "height": "600",
+  "plotLineColorGrowing": "rgba(60, 188, 152, 1)",
+  "plotLineColorFalling": "rgba(255, 74, 104, 1)",
+  "gridLineColor": "rgba(233, 233, 234, 1)",
+  "scaleFontColor": "rgba(214, 216, 224, 1)",
+  "belowLineFillColorGrowing": "rgba(60, 188, 152, 0.05)",
+  "belowLineFillColorFalling": "rgba(255, 74, 104, 0.05)",
+  "symbolActiveColor": "rgba(242, 250, 254, 1)",
+  "tabs": [
+    {
+      "title": "Indices",
+      "symbols": [
+        {
+          "s": "NASDAQ:FB",
+          "d": "Facebook"
+        },
+        {
+          "s": "NYSE:SNAP",
+          "d": "Snap Inc."
+        },
+        {
+          "s": "NYSE:TWTR",
+          "d": "Twitter"
+        },
+        {
+          "s": "NASDAQ:GOOG",
+          "d": "Youtube"
+        },
+        {
+          "s": "OTC:YAHOY",
+          "d": "Yahoo"
+        }
+      ],
+      "originalTitle": "Indices"
+    },
+    {
+      "title": "Commodities",
+      "symbols": [
+        {
+          "s": "CME_MINI:ES1!",
+          "d": "E-Mini S&P"
+        },
+        {
+          "s": "CME:E61!",
+          "d": "Euro"
+        },
+        {
+          "s": "COMEX:GC1!",
+          "d": "Gold"
+        },
+        {
+          "s": "NYMEX:CL1!",
+          "d": "Crude Oil"
+        },
+        {
+          "s": "NYMEX:NG1!",
+          "d": "Natural Gas"
+        },
+        {
+          "s": "CBOT:ZC1!",
+          "d": "Corn"
+        }
+      ],
+      "originalTitle": "Commodities"
+    },
+    {
+      "title": "Bonds",
+      "symbols": [
+        {
+          "s": "CME:GE1!",
+          "d": "Eurodollar"
+        },
+        {
+          "s": "CBOT:ZB1!",
+          "d": "T-Bond"
+        },
+        {
+          "s": "CBOT:UD1!",
+          "d": "Ultra T-Bond"
+        },
+        {
+          "s": "EUREX:GG1!",
+          "d": "Euro Bund"
+        },
+        {
+          "s": "EUREX:II1!",
+          "d": "Euro BTP"
+        },
+        {
+          "s": "EUREX:HR1!",
+          "d": "Euro BOBL"
+        }
+      ],
+      "originalTitle": "Bonds"
+    },
+    {
+      "title": "Forex",
+      "symbols": [
+        {
+          "s": "FX:EURUSD"
+        },
+        {
+          "s": "FX:GBPUSD"
+        },
+        {
+          "s": "FX:USDJPY"
+        },
+        {
+          "s": "FX:USDCHF"
+        },
+        {
+          "s": "FX:AUDUSD"
+        },
+        {
+          "s": "FX:USDCAD"
+        }
+      ],
+      "originalTitle": "Forex"
+    }
+  ]
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Market Data</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  {
+  "showChart": true,
+  "locale": "en",
+  "largeChartUrl": "",
+  "width": "400",
+  "height": "600",
+  "plotLineColorGrowing": "rgba(60, 188, 152, 1)",
+  "plotLineColorFalling": "rgba(255, 74, 104, 1)",
+  "gridLineColor": "rgba(233, 233, 234, 1)",
+  "scaleFontColor": "rgba(214, 216, 224, 1)",
+  "belowLineFillColorGrowing": "rgba(60, 188, 152, 0.05)",
+  "belowLineFillColorFalling": "rgba(255, 74, 104, 0.05)",
+  "symbolActiveColor": "rgba(242, 250, 254, 1)",
+  "tabs": [
+    {
+      "title": "Indices",
+      "symbols": [
+        {
+          "s": "NYSE:T",
+          "d": "AT&T"
+        },
+        {
+          "s": "NYSE:S",
+          "d": "Sprint"
+        },
+        {
+          "s": "NYSE:VZ",
+          "d": "Verizon"
+        },
+        {
+          "s": "NASDAQ:TMUS",
+          "d": "T-Mobile"
+        }
+      ],
+      "originalTitle": "Indices"
+    },
+    {
+      "title": "Commodities",
+      "symbols": [
+        {
+          "s": "CME_MINI:ES1!",
+          "d": "E-Mini S&P"
+        },
+        {
+          "s": "CME:E61!",
+          "d": "Euro"
+        },
+        {
+          "s": "COMEX:GC1!",
+          "d": "Gold"
+        },
+        {
+          "s": "NYMEX:CL1!",
+          "d": "Crude Oil"
+        },
+        {
+          "s": "NYMEX:NG1!",
+          "d": "Natural Gas"
+        },
+        {
+          "s": "CBOT:ZC1!",
+          "d": "Corn"
+        }
+      ],
+      "originalTitle": "Commodities"
+    },
+    {
+      "title": "Bonds",
+      "symbols": [
+        {
+          "s": "CME:GE1!",
+          "d": "Eurodollar"
+        },
+        {
+          "s": "CBOT:ZB1!",
+          "d": "T-Bond"
+        },
+        {
+          "s": "CBOT:UD1!",
+          "d": "Ultra T-Bond"
+        },
+        {
+          "s": "EUREX:GG1!",
+          "d": "Euro Bund"
+        },
+        {
+          "s": "EUREX:II1!",
+          "d": "Euro BTP"
+        },
+        {
+          "s": "EUREX:HR1!",
+          "d": "Euro BOBL"
+        }
+      ],
+      "originalTitle": "Bonds"
+    },
+    {
+      "title": "Forex",
+      "symbols": [
+        {
+          "s": "FX:EURUSD"
+        },
+        {
+          "s": "FX:GBPUSD"
+        },
+        {
+          "s": "FX:USDJPY"
+        },
+        {
+          "s": "FX:USDCHF"
+        },
+        {
+          "s": "FX:AUDUSD"
+        },
+        {
+          "s": "FX:USDCAD"
+        }
+      ],
+      "originalTitle": "Forex"
+    }
+  ]
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Market Data</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  {
+  "showChart": true,
+  "locale": "en",
+  "largeChartUrl": "",
+  "width": "400",
+  "height": "600",
+  "plotLineColorGrowing": "rgba(60, 188, 152, 1)",
+  "plotLineColorFalling": "rgba(255, 74, 104, 1)",
+  "gridLineColor": "rgba(233, 233, 234, 1)",
+  "scaleFontColor": "rgba(214, 216, 224, 1)",
+  "belowLineFillColorGrowing": "rgba(60, 188, 152, 0.05)",
+  "belowLineFillColorFalling": "rgba(255, 74, 104, 0.05)",
+  "symbolActiveColor": "rgba(242, 250, 254, 1)",
+  "tabs": [
+    {
+      "title": "Indices",
+      "symbols": [
+        {
+          "s": "NASDAQ:MSFT",
+          "d": "Microsoft"
+        },
+        {
+          "s": "NASDAQ:GOOGL",
+          "d": "Google"
+        },
+        {
+          "s": " NASDAQ:INTC",
+          "d": "Intel"
+        },
+        {
+          "s": "NASDAQ:AMD",
+          "d": "AMD"
+        },
+        {
+          "s": "NASDAQ:NVDA",
+          "d": "Nvidia"
+        },
+        {
+          "s": "NYSE:ORCL",
+          "d": "Oracle"
+        }
+      ],
+      "originalTitle": "Indices"
+    },
+    {
+      "title": "Commodities",
+      "symbols": [
+        {
+          "s": "CME_MINI:ES1!",
+          "d": "E-Mini S&P"
+        },
+        {
+          "s": "CME:E61!",
+          "d": "Euro"
+        },
+        {
+          "s": "COMEX:GC1!",
+          "d": "Gold"
+        },
+        {
+          "s": "NYMEX:CL1!",
+          "d": "Crude Oil"
+        },
+        {
+          "s": "NYMEX:NG1!",
+          "d": "Natural Gas"
+        },
+        {
+          "s": "CBOT:ZC1!",
+          "d": "Corn"
+        }
+      ],
+      "originalTitle": "Commodities"
+    },
+    {
+      "title": "Bonds",
+      "symbols": [
+        {
+          "s": "CME:GE1!",
+          "d": "Eurodollar"
+        },
+        {
+          "s": "CBOT:ZB1!",
+          "d": "T-Bond"
+        },
+        {
+          "s": "CBOT:UD1!",
+          "d": "Ultra T-Bond"
+        },
+        {
+          "s": "EUREX:GG1!",
+          "d": "Euro Bund"
+        },
+        {
+          "s": "EUREX:II1!",
+          "d": "Euro BTP"
+        },
+        {
+          "s": "EUREX:HR1!",
+          "d": "Euro BOBL"
+        }
+      ],
+      "originalTitle": "Bonds"
+    },
+    {
+      "title": "Forex",
+      "symbols": [
+        {
+          "s": "FX:EURUSD"
+        },
+        {
+          "s": "FX:GBPUSD"
+        },
+        {
+          "s": "FX:USDJPY"
+        },
+        {
+          "s": "FX:USDCHF"
+        },
+        {
+          "s": "FX:AUDUSD"
+        },
+        {
+          "s": "FX:USDCAD"
+        }
+      ],
+      "originalTitle": "Forex"
+    }
+  ]
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Market Data</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  {
+  "showChart": true,
+  "locale": "en",
+  "largeChartUrl": "",
+  "width": "400",
+  "height": "600",
+  "plotLineColorGrowing": "rgba(60, 188, 152, 1)",
+  "plotLineColorFalling": "rgba(255, 74, 104, 1)",
+  "gridLineColor": "rgba(233, 233, 234, 1)",
+  "scaleFontColor": "rgba(214, 216, 224, 1)",
+  "belowLineFillColorGrowing": "rgba(60, 188, 152, 0.05)",
+  "belowLineFillColorFalling": "rgba(255, 74, 104, 0.05)",
+  "symbolActiveColor": "rgba(242, 250, 254, 1)",
+  "tabs": [
+    {
+      "title": "Indices",
+      "symbols": [
+        {
+          "s": "NASDAQ:AAPL",
+          "d": "Apple"
+        },
+        {
+          "s": "OTC:SSNLF",
+          "d": "Samsung"
+        },
+        {
+          "s": "SZSE:002502",
+          "d": "Huawei"
+        },
+        {
+          "s": "OTC:XIACF",
+          "d": "Xiaomi"
+        },
+        {
+          "s": "KRX:066570",
+          "d": "LG Electronics"
+        },
+        {
+          "s": "NYSE:MSI",
+          "d": "Motorola"
+        }
+      ],
+      "originalTitle": "Indices"
+    },
+    {
+      "title": "Commodities",
+      "symbols": [
+        {
+          "s": "CME_MINI:ES1!",
+          "d": "E-Mini S&P"
+        },
+        {
+          "s": "CME:E61!",
+          "d": "Euro"
+        },
+        {
+          "s": "COMEX:GC1!",
+          "d": "Gold"
+        },
+        {
+          "s": "NYMEX:CL1!",
+          "d": "Crude Oil"
+        },
+        {
+          "s": "NYMEX:NG1!",
+          "d": "Natural Gas"
+        },
+        {
+          "s": "CBOT:ZC1!",
+          "d": "Corn"
+        }
+      ],
+      "originalTitle": "Commodities"
+    },
+    {
+      "title": "Bonds",
+      "symbols": [
+        {
+          "s": "CME:GE1!",
+          "d": "Eurodollar"
+        },
+        {
+          "s": "CBOT:ZB1!",
+          "d": "T-Bond"
+        },
+        {
+          "s": "CBOT:UD1!",
+          "d": "Ultra T-Bond"
+        },
+        {
+          "s": "EUREX:GG1!",
+          "d": "Euro Bund"
+        },
+        {
+          "s": "EUREX:II1!",
+          "d": "Euro BTP"
+        },
+        {
+          "s": "EUREX:HR1!",
+          "d": "Euro BOBL"
+        }
+      ],
+      "originalTitle": "Bonds"
+    },
+    {
+      "title": "Forex",
+      "symbols": [
+        {
+          "s": "FX:EURUSD"
+        },
+        {
+          "s": "FX:GBPUSD"
+        },
+        {
+          "s": "FX:USDJPY"
+        },
+        {
+          "s": "FX:USDCHF"
+        },
+        {
+          "s": "FX:AUDUSD"
+        },
+        {
+          "s": "FX:USDCAD"
+        }
+      ],
+      "originalTitle": "Forex"
+    }
+  ]
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</div>
+<!-- Stock Trackers End -->
 
 </body>
 </html>
