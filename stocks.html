@@ -106,15 +106,27 @@
   }
   .phone {
       position:absolute;
-      top:875px;
+      top:870px;
       right:75px;
       font-size: 20px;
       font-family: K2D;
   }
   .phone2 {
       position: absolute;
-      top:900px;
+      top:890px;
       right:50px;
+  }
+  .entertainment {
+      position: absolute;
+      top:875px;
+      left: 550px;
+      font-size: 20px;
+      font-family: K2D;
+  }
+  .entertainment2 {
+      position: absolute;
+      top: 900px;
+      left:500px;
   }
 </style>
 </head>
@@ -140,8 +152,10 @@
 <div class="phone">
     Smartphone Producer Stocks
 </div>
+<div class="entertainment">
+    Entertainment Company Stocks
+</div>
 <!-- Stock Tracker Begin -->
-
 <div>
  <!-- TradingView Widget BEGIN -->
 <div class="title2">
@@ -725,6 +739,150 @@
         {
           "s": "NYSE:MSI",
           "d": "Motorola"
+        }
+      ],
+      "originalTitle": "Indices"
+    },
+    {
+      "title": "Commodities",
+      "symbols": [
+        {
+          "s": "CME_MINI:ES1!",
+          "d": "E-Mini S&P"
+        },
+        {
+          "s": "CME:E61!",
+          "d": "Euro"
+        },
+        {
+          "s": "COMEX:GC1!",
+          "d": "Gold"
+        },
+        {
+          "s": "NYMEX:CL1!",
+          "d": "Crude Oil"
+        },
+        {
+          "s": "NYMEX:NG1!",
+          "d": "Natural Gas"
+        },
+        {
+          "s": "CBOT:ZC1!",
+          "d": "Corn"
+        }
+      ],
+      "originalTitle": "Commodities"
+    },
+    {
+      "title": "Bonds",
+      "symbols": [
+        {
+          "s": "CME:GE1!",
+          "d": "Eurodollar"
+        },
+        {
+          "s": "CBOT:ZB1!",
+          "d": "T-Bond"
+        },
+        {
+          "s": "CBOT:UD1!",
+          "d": "Ultra T-Bond"
+        },
+        {
+          "s": "EUREX:GG1!",
+          "d": "Euro Bund"
+        },
+        {
+          "s": "EUREX:II1!",
+          "d": "Euro BTP"
+        },
+        {
+          "s": "EUREX:HR1!",
+          "d": "Euro BOBL"
+        }
+      ],
+      "originalTitle": "Bonds"
+    },
+    {
+      "title": "Forex",
+      "symbols": [
+        {
+          "s": "FX:EURUSD"
+        },
+        {
+          "s": "FX:GBPUSD"
+        },
+        {
+          "s": "FX:USDJPY"
+        },
+        {
+          "s": "FX:USDCHF"
+        },
+        {
+          "s": "FX:AUDUSD"
+        },
+        {
+          "s": "FX:USDCAD"
+        }
+      ],
+      "originalTitle": "Forex"
+    }
+  ]
+}
+  </script>
+</div>
+</div>
+<!-- TradingView Widget END -->
+<!-- TradingView Widget BEGIN -->
+<div class="entertainment2">
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Market Data</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  {
+  "showChart": true,
+  "locale": "en",
+  "largeChartUrl": "",
+  "width": "400",
+  "height": "600",
+  "plotLineColorGrowing": "rgba(60, 188, 152, 1)",
+  "plotLineColorFalling": "rgba(255, 74, 104, 1)",
+  "gridLineColor": "rgba(233, 233, 234, 1)",
+  "scaleFontColor": "rgba(214, 216, 224, 1)",
+  "belowLineFillColorGrowing": "rgba(60, 188, 152, 0.05)",
+  "belowLineFillColorFalling": "rgba(255, 74, 104, 0.05)",
+  "symbolActiveColor": "rgba(242, 250, 254, 1)",
+  "tabs": [
+    {
+      "title": "Indices",
+      "symbols": [
+        {
+          "s": "NASDAQ:NFLX",
+          "d": "Netflix"
+        },
+        {
+          "s": "NYSE:AMC",
+          "d": "AMC"
+        },
+        {
+          "s": "NYSE:DIS",
+          "d": "Disney"
+        },
+        {
+          "s": "NYSE:SNE",
+          "d": "Sony"
+        },
+        {
+          "s": "NYSE:LGF.A",
+          "d": "Lionsgate"
+        },
+        {
+          "s": "NASDAQ:FOX",
+          "d": "Fox Inc."
+        },
+        {
+          "s": "NYSE:IMAX",
+          "d": "IMAX"
         }
       ],
       "originalTitle": "Indices"
