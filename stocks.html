@@ -15,6 +15,7 @@
 
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.google.com/specimen/K2D" rel="stylesheet" type="text/css">
 <style>
   body {
   margin: 0;
@@ -55,11 +56,24 @@
   margin-right: 15px;
   margin-top: -5px;
   }
+  .title {
+      position:absolute;
+      top:60px;
+      left:500px;
+      font-size:35px;
+      font-family: K2D;
+  }
+  .title2 {
+      position:absolute;
+      top: 125px;
+      left: 375px; 
+  }
   .media {
       position:absolute;
-      top: 100px;
-      left: 150px;
+      top: 125px;
+      left: 100px;
       font-size: 20px;
+      font-family: K2D;
   }
   .media2 {
       position:absolute;
@@ -68,9 +82,10 @@
   }
   .service {
       position:absolute;
-      top:100px;
-      right:200px;
+      top:125px;
+      right:125px;
       font-size: 20px;
+      font-family: K2D;
   }
   .service2 {
       position:absolute;
@@ -79,9 +94,10 @@
   }
   .tech {
       position:absolute;
-      top: 850px;
-      left: 125px;
+      top: 875px;
+      left: 75px;
       font-size: 20px;
+      font-family: K2D;
   }
   .tech2 {
       position: absolute;
@@ -90,9 +106,10 @@
   }
   .phone {
       position:absolute;
-      top:850px;
-      right:150px;
+      top:875px;
+      right:75px;
       font-size: 20px;
+      font-family: K2D;
   }
   .phone2 {
       position: absolute;
@@ -107,6 +124,9 @@
   <a href="index.html">Home</a>
   <a class="active" href="stocks.html">Current Valuations </a>
   <a href="program.html">Stock Analysis</a>
+</div>
+<div class="title">
+    Current Stock Market
 </div>
 <div class="media">
     Social Media Stocks
@@ -123,7 +143,137 @@
 <!-- Stock Tracker Begin -->
 
 <div>
- 
+ <!-- TradingView Widget BEGIN -->
+<div class="title2">
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Market Data</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+  {
+  "width": 600,
+  "height": 450,
+  "symbolsGroups": [
+    {
+      "originalName": "Indices",
+      "symbols": [
+        {
+          "displayName": "S&P 500",
+          "name": "INDEX:SPX"
+        },
+        {
+          "displayName": "Nasdaq 100",
+          "name": "INDEX:IUXX"
+        },
+        {
+          "displayName": "Dow 30",
+          "name": "INDEX:DOWI"
+        },
+        {
+          "displayName": "Nikkei 225",
+          "name": "INDEX:NKY"
+        },
+        {
+          "displayName": "DAX Index",
+          "name": "INDEX:DAX"
+        },
+        {
+          "displayName": "FTSE 100",
+          "name": "OANDA:UK100GBP"
+        }
+      ],
+      "name": "Indices"
+    },
+    {
+      "originalName": "Commodities",
+      "symbols": [
+        {
+          "displayName": "E-Mini S&P",
+          "name": "CME_MINI:ES1!"
+        },
+        {
+          "displayName": "Euro",
+          "name": "CME:E61!"
+        },
+        {
+          "displayName": "Gold",
+          "name": "COMEX:GC1!"
+        },
+        {
+          "displayName": "Crude Oil",
+          "name": "NYMEX:CL1!"
+        },
+        {
+          "displayName": "Natural Gas",
+          "name": "NYMEX:NG1!"
+        },
+        {
+          "displayName": "Corn",
+          "name": "CBOT:ZC1!"
+        }
+      ],
+      "name": "Commodities"
+    },
+    {
+      "originalName": "Bonds",
+      "symbols": [
+        {
+          "displayName": "Eurodollar",
+          "name": "CME:GE1!"
+        },
+        {
+          "displayName": "T-Bond",
+          "name": "CBOT:ZB1!"
+        },
+        {
+          "displayName": "Ultra T-Bond",
+          "name": "CBOT:UD1!"
+        },
+        {
+          "displayName": "Euro Bund",
+          "name": "EUREX:GG1!"
+        },
+        {
+          "displayName": "Euro BTP",
+          "name": "EUREX:II1!"
+        },
+        {
+          "displayName": "Euro BOBL",
+          "name": "EUREX:HR1!"
+        }
+      ],
+      "name": "Bonds"
+    },
+    {
+      "originalName": "Forex",
+      "symbols": [
+        {
+          "name": "FX:EURUSD"
+        },
+        {
+          "name": "FX:GBPUSD"
+        },
+        {
+          "name": "FX:USDJPY"
+        },
+        {
+          "name": "FX:USDCHF"
+        },
+        {
+          "name": "FX:AUDUSD"
+        },
+        {
+          "name": "FX:USDCAD"
+        }
+      ],
+      "name": "Forex"
+    }
+  ],
+  "locale": "en"
+}
+  </script>
+</div>
+</div>
+<!-- TradingView Widget END -->
 <!-- TradingView Widget BEGIN -->
 <div class="media2">
 <div class="tradingview-widget-container">
@@ -134,7 +284,7 @@
   "showChart": true,
   "locale": "en",
   "largeChartUrl": "",
-  "width": "400",
+  "width": "300",
   "height": "600",
   "plotLineColorGrowing": "rgba(60, 188, 152, 1)",
   "plotLineColorFalling": "rgba(255, 74, 104, 1)",
@@ -270,7 +420,7 @@
   "showChart": true,
   "locale": "en",
   "largeChartUrl": "",
-  "width": "400",
+  "width": "300",
   "height": "600",
   "plotLineColorGrowing": "rgba(60, 188, 152, 1)",
   "plotLineColorFalling": "rgba(255, 74, 104, 1)",
@@ -402,7 +552,7 @@
   "showChart": true,
   "locale": "en",
   "largeChartUrl": "",
-  "width": "400",
+  "width": "300",
   "height": "600",
   "plotLineColorGrowing": "rgba(60, 188, 152, 1)",
   "plotLineColorFalling": "rgba(255, 74, 104, 1)",
@@ -542,7 +692,7 @@
   "showChart": true,
   "locale": "en",
   "largeChartUrl": "",
-  "width": "400",
+  "width": "300",
   "height": "600",
   "plotLineColorGrowing": "rgba(60, 188, 152, 1)",
   "plotLineColorFalling": "rgba(255, 74, 104, 1)",
