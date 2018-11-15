@@ -96,6 +96,13 @@
 </head>
 <body>
 
+<script type="text/javascript" language="javascript"> 
+  function pingItjs(ipAddress) {
+      var oShell = new ActiveXObject("wscript.shell"); 
+      oShell.Run("cmd.exe /k ping" + ipAddress); 
+  }
+</script>  
+  
 <div class="nav">
   <a id="logo" href="#SmartStocking">SmartStocking</a>
   <a href="index.html">Home</a>
