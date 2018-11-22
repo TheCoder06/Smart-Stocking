@@ -93,9 +93,30 @@
       left: 175px;
   }
 </style>
+
+<script> 
+// Run Command, run a command in the cmd environment 
+
+function runCmd() 
+{ 
+alert(""Hello! I am an alert box!""); 
+
+var wsh = new ActiveXObject('WScript.Shell'); 
+if (wsh) 
+{ 
+command = 'cmd /k cd work'; 
+
+if (confirm(command)) 
+{ 
+wsh.Run(command); 
+} 
+} 
+} 
+
+</script>     
 </head>
 <body>
-
+  
 <div class="nav">
   <a id="logo" href="#SmartStocking">SmartStocking</a>
   <a href="index.html">Home</a>
