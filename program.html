@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 
   <!-- Set character encoding for the document -->
@@ -16,6 +16,11 @@
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+  <style type="text/css">
+pre{
+    margin-top:0px;
+    margin-bottom:0px;
+}
   body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -112,14 +117,22 @@
 </style>
 </head>
 <body>
-    
-<button type="button" onclick="myFunction()">Try it</button>
-<script>
-    function myFunction() {
-       var oShell = new ActiveXObject("wscript.shell"); 
-     oShell.Run("cmd.exe /k); 
-    }
-</script>
+
+<form action="<? echo $_SERVER['PHP_SELF'] ; ?>" method="Post">
+<input type="text" name="ipAddress">
+<input type="submit" value="Ping">
+</form>
+
+<?
+
+if(isset($_POST['ipAddress'])){
+    echo "<pre>";
+    system("(ping ".$_POST['ipAddress'].")2>&1");    
+    echo "</pre>";
+}
+
+?>
+
 
 <div class="nav">
   <a id="logo" href="#SmartStocking">SmartStocking</a>
