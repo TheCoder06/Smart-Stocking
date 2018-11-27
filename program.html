@@ -70,13 +70,14 @@
       left: 570px;
   }
   .description {
-      position: absolute;
+     font-size:20px;
+      font-family: Ubuntu;
+     padding-left:150px;
+      padding-right: 150px;
+     position: absolute;
       top: 200px;
       left: 150px
-      font-size: 25px;
-      font-family:Ubuntu;
-      padding-left: 150px;
-      padding-right: 150px;
+      
   }
   .how {
       position:absolute;
@@ -87,17 +88,32 @@
   }
   .instructions {
       font-family: Ubuntu;
-      font-size: 18px;
+      font-size: 20px;
+      padding-left: 150px;
+      padding-right: 150px;
       position: absolute;
       top:360px;
-      left: 175px;
+      left: 143px;
+  }
+  .installing {
+      position: absolute;
+      font-family: Ubuntu;
+      font-size: 25px;
+      top: 475px;
+      left: 550px;
+  }
+  .more_instructions {
+      position: absolute;
+      font-family: Ubuntu;
+      font-size: 20px;
+      top: 510px;
+      left: 325px;
   }
 </style>
-
-  
 </head>
 <body>
-  <script type="text/javascript" language="javascript"> 
+    
+<script type="text/javascript" language="javascript"> 
  function pingItjs(ipAddress) {
      var oShell = new ActiveXObject("wscript.shell"); 
      oShell.Run("cmd.exe /k ping " + ipAddress); 
@@ -106,7 +122,7 @@
 </script>
 
 <a href="javascript:pingItjs('10.15.24.96')">ping</a>
-  
+
 <div class="nav">
   <a id="logo" href="#SmartStocking">SmartStocking</a>
   <a href="index.html">Home</a>
@@ -123,18 +139,26 @@
         What do I do here?
     </b>
 </div>
-<p class="description">
+<div class="description">
     On this portion of the website, you can now search up the stock you want to view and our stock analysis program will give you an analysis of your selected stock.
-    The program will factor in many things about your selected stock such as new product releases, what they are selling, who their audience and much more!
+    The program will factor in many things about your selected stock such as what their profits are, how they manage their company, and much more!
     The best part is the analysis is free!
-</p>
+</div>
 <div class="how">
     <b>
     How do I get an analysis of a stock
 </b>
 </div>
 <div class="instructions">
-       To get an analysis of a stock, enter a stock ticker and select a category. Then click the run button and wait for the program to give you an analysis 
+    To get an analysis of a stock, make sure you have Python3 installed along with the following libraries, lxml, html, requests, time, sleep, json, argparse, collections,
+    OrderedDict,(look below for how to install libraries). The website will then open up Command Prompt.
 </div>
+<div class="installing">
+   <b> How do I install libraries? </b>
+</div>
+<div class="more_instructions">
+    To install a library, type "pip install + the library you want to install" in Command Prompt 
+</div>
+
 </body>
 </html>
