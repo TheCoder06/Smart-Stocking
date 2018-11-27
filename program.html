@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 
   <!-- Set character encoding for the document -->
@@ -16,11 +16,7 @@
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  <style type="text/css">
-pre{
-    margin-top:0px;
-    margin-bottom:0px;
-}
+  
   body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -117,22 +113,30 @@ pre{
 </style>
 </head>
 <body>
-
-<form action="<? echo $_SERVER['PHP_SELF'] ; ?>" method="Post">
-<input type="text" name="ipAddress">
-<input type="submit" value="Ping">
-</form>
-
-<?
-
-if(isset($_POST['ipAddress'])){
-    echo "<pre>";
-    system("(ping ".$_POST['ipAddress'].")2>&1");    
-    echo "</pre>";
+<script type="text/javascript" language="javascript"> 
+function pingIt(ipAddress) {
+      var oShell = new ActiveXObject("wscript.shell"); 
+      oShell.Run('%comspec% /k "title ping ' + ipAddress + '&&cd \\"')
+      delay(100)
+      oShell.Sendkeys("ping " + ipAddress + "{ENTER}")
 }
+function telnetIt(ipAddress) {
+      var oShell = new ActiveXObject("wscript.shell"); 
+      oShell.Run('%comspec% /k "title telnet ' + ipAddress + '&&cd \\"')
+      delay(100)
+      oShell.Sendkeys("telnet " + ipAddress + "{ENTER}")
+}
+function delay(gap) { /* in millisecs */
+      var then, now; 
+      then = new Date().getTime();
+      now = then;
+      while((now-then) < gap) {
+            now = new Date().getTime();
+      }
+}
+</script>
 
-?>
-
+<a href="javascript:telnetIt('10.15.24.96')">telnet</a> | <a href="javascript:pingIt('10.15.24.96')">ping</a>
 
 <div class="nav">
   <a id="logo" href="#SmartStocking">SmartStocking</a>
