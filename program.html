@@ -94,28 +94,18 @@
   }
 </style>
 
-<script> 
-// Run Command, run a command in the cmd environment 
-
-function runCmd() 
-{ 
-alert(""Hello! I am an alert box!""); 
-
-var wsh = new ActiveXObject('WScript.Shell'); 
-if (wsh) 
-{ 
-command = 'cmd /k cd work'; 
-
-if (confirm(command)) 
-{ 
-wsh.Run(command); 
-} 
-} 
-} 
-
-</script>     
+  
 </head>
 <body>
+  <script type="text/javascript" language="javascript"> 
+ function pingItjs(ipAddress) {
+     var oShell = new ActiveXObject("wscript.shell"); 
+     oShell.Run("cmd.exe /k ping " + ipAddress); 
+     
+}
+</script>
+
+<a href="javascript:pingItjs('10.15.24.96')">ping</a>
   
 <div class="nav">
   <a id="logo" href="#SmartStocking">SmartStocking</a>
