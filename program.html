@@ -113,30 +113,9 @@
 </style>
 </head>
 <body>
-<script type="text/javascript" language="javascript"> 
-function pingIt(ipAddress) {
-      var oShell = new ActiveXObject("wscript.shell"); 
-      oShell.Run('%comspec% /k "title ping ' + ipAddress + '&&cd \\"')
-      delay(100)
-      oShell.Sendkeys("ping " + ipAddress + "{ENTER}")
-}
-function telnetIt(ipAddress) {
-      var oShell = new ActiveXObject("wscript.shell"); 
-      oShell.Run('%comspec% /k "title telnet ' + ipAddress + '&&cd \\"')
-      delay(100)
-      oShell.Sendkeys("telnet " + ipAddress + "{ENTER}")
-}
-function delay(gap) { /* in millisecs */
-      var then, now; 
-      then = new Date().getTime();
-      now = then;
-      while((now-then) < gap) {
-            now = new Date().getTime();
-      }
-}
-</script>
-
-<a href="javascript:telnetIt('161.97.80.98')">telnet</a> | <a href="javascript:pingIt('161.97.80.98')">ping</a>
+<div class="dowload-code">
+  <a href="https://github.com/TheCoder06/Smart-Stocking/blob/master/stock-analysis.py">...</a>
+  </div>
 
 <div class="nav">
   <a id="logo" href="#SmartStocking">SmartStocking</a>
