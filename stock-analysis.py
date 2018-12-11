@@ -1,10 +1,6 @@
-from lxml import html  
 import requests
-from time import sleep
-import json
 import argparse
-from collections import OrderedDict
-from time import sleep
+import json
 from iexfinance.stocks import Stock
 
 
@@ -70,7 +66,7 @@ print ("")
 if dividendYield == 0:
     print ("This stock doesn't pay out a Dividend.")
 
-if dividendYield < 1.99
+if dividendYield < 1.99:
     print ("This stock's Dividend Yield is not good")
 
 
