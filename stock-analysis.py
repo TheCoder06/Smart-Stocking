@@ -67,8 +67,8 @@ print ("Beta:%s"%beta)
 print ("")
 print ("")
 
-if dividendYield = 0:
-    print ("This stock dowsn't pay out a Dividend.")
+if dividendYield == 0:
+    print ("This stock doesn't pay out a Dividend.")
 
 if dividendYield < 1.99
     print ("This stock's Dividend Yield is not good")
