@@ -74,10 +74,10 @@
      font-size:20px;
       font-family: Ubuntu;
      padding-left:150px;
-      padding-right: 150px;
+      padding-right: 5%;
      position: absolute;
       top: 200px;
-      left: 13%
+      left: 9%
       
   }
   .how {
@@ -94,7 +94,8 @@
       padding-right: 150px;
       position: absolute;
       top:360px;
-      left:13%;
+      left:9%;
+      padding-right: 5%;
   }
   .installing {
       position: absolute;
@@ -184,12 +185,13 @@
 </style>
 </head>
 <body>
-
+<!--
     <div class="download-code">
   <a href="stock-analysis.py" download>
       <img src="data:image/png;base64,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" width="125" height:"75">
   </a>
   </div>
+    -->
 <div class="nav">
   <a id="logo" href="#SmartStocking">SmartStocking</a>
   <a href="index.html">Home</a>
