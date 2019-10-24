@@ -16,156 +16,7 @@
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.nav {
-  overflow: hidden;
-  background-color: #0b98de;
-}
-.nav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: inline-block;
-  height: 100%;
-  width: 15%;
-}
-.nav a:hover {
-  background-color: #17b0cf;
-  color: black;
-}
-.nav a.active {
-  background-color:  #4CAF50;
-  color: white;
-}
-#logo {
- /*font*/
-  font-family: 'Hind', sans-serif;
-  font-size: 25px;
-  letter-spacing: -1.2px;
-  text-shadow: 1px 1px 2px #c4c4c4;
-/*box*/
-  padding-left: 15px;
-  padding-right: 40px;
-  margin-right: 15px;
-  margin-top: -5px;
-  }
-  .header {
-      font-family: Ubuntu;
-      font-size: 45px;
-      position: absolute;
-      top: 75px;
-      left: 550px;
-  }
-  .paragraph {
-      font-family:Ubuntu;
-      font-size: 25px;
-      position:absolute;
-      top: 175px;
-      left: 570px;
-  }
-  .description {
-      position: absolute;
-      top: 200px;
-      left: 150px
-      font-size: 25px;
-      font-family:Ubuntu;
-      padding-left: 150px;
-      padding-right: 150px;
-  }
-  .how {
-      position:absolute;
-      font-family: Ubuntu;
-      font-size: 25px;
-      top:325px;
-      left: 505px;
-  }
-  .instructions {
-      font-family: Ubuntu;
-      font-size: 18px;
-      position: absolute;
-      top:360px;
-      left: 175px;
-  }
-</style>
-
-<script> 
-// Run Command, run a command in the cmd environment 
-
-function runCmd() 
-{ 
-alert(""Hello! I am an alert box!""); 
-
-var wsh = new ActiveXObject('WScript.Shell'); 
-if (wsh) 
-{ 
-command = 'cmd /k cd work'; 
-
-if (confirm(command)) 
-{ 
-wsh.Run(command); 
-} 
-} 
-} 
-
-</script>     
-</head>
-<body>
   
-<div class="nav">
-  <a id="logo" href="#SmartStocking">SmartStocking</a>
-  <a href="index.html">Home</a>
-  <a href="stocks.html">Current Valuations </a>
-  <a class="active" href="program.html">Stock Analysis</a>
-</div>
-<div class="header">
-    <b>
-    Stock Analysis
-    </b>
-</div>
-<div class="paragraph">
-    <b>
-        What do I do here?
-    </b>
-</div>
-<p class="description">
-    On this portion of the website, you can now search up the stock you want to view and our stock analysis program will give you an analysis of your selected stock.
-    The program will factor in many things about your selected stock such as new product releases, what they are selling, who their audience and much more!
-    The best part is the analysis is free!
-</p>
-<div class="how">
-    <b>
-    How do I get an analysis of a stock
-</b>
-</div>
-<div class="instructions">
-       To get an analysis of a stock, enter a stock ticker and select a category. Then click the run button and wait for the program to give you an analysis 
-</div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-
-  <!-- Set character encoding for the document -->
-  <meta charset="utf-8">
-
-  <!-- Instruct Internet Explorer to use its latest rendering engine -->
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-  <!-- Viewport for responsive web design -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Title for the page -->
-  <title>Smart Stocking</title>
-
-  <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
   body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -210,23 +61,23 @@ wsh.Run(command);
       font-size: 45px;
       position: absolute;
       top: 75px;
-      left: 550px;
+      left: 45%;
   }
   .paragraph {
       font-family:Ubuntu;
       font-size: 25px;
       position:absolute;
       top: 175px;
-      left: 570px;
+      left: 47%;
   }
   .description {
      font-size:20px;
       font-family: Ubuntu;
      padding-left:150px;
-      padding-right: 150px;
+      padding-right: 5%;
      position: absolute;
       top: 200px;
-      left: 150px
+      left: 9%
       
   }
   .how {
@@ -234,7 +85,7 @@ wsh.Run(command);
       font-family: Ubuntu;
       font-size: 25px;
       top:325px;
-      left: 505px;
+      left:43%;
   }
   .instructions {
       font-family: Ubuntu;
@@ -243,36 +94,104 @@ wsh.Run(command);
       padding-right: 150px;
       position: absolute;
       top:360px;
-      left: 143px;
+      left:9%;
+      padding-right: 5%;
   }
   .installing {
       position: absolute;
       font-family: Ubuntu;
       font-size: 25px;
-      top: 475px;
-      left: 550px;
+      top: 550px;
+      left: 45%;
   }
   .more_instructions {
       position: absolute;
       font-family: Ubuntu;
       font-size: 20px;
-      top: 510px;
-      left: 325px;
+      top: 600px;
+      left: 35%;
+  }
+  .download-code {
+      position: absolute;
+      font-family: Ubuntu;
+      top: 650px;
+      left: 50%;
+  }
+  .vocab {
+  position: absolute;
+  font-family: Ubuntu;
+  font-size: 25px;
+  top: 775px;
+  left: 48%;
+  }
+  .d1 {
+  position: absolute;
+  font-family: Ubuntu;
+  font-size: 20px;
+  top: 825px;
+  left: 18%;
+  padding-right: 5%;
+  }
+  .d2 {
+  position: absolute;
+  font-family: Ubuntu;
+  font-size: 20px;
+  top: 890px;
+  left: 18%;
+       padding-right: 5%;
+  }
+  .d3 {
+    position: absolute;
+  font-family: Ubuntu;
+  font-size: 20px;
+  top:975px;
+  left: 18%;
+       padding-right: 5%;
+  }
+  .d4 {
+       position: absolute;
+  font-family: Ubuntu;
+  font-size: 20px;
+  top:1050px;
+  left: 18%;
+       padding-right: 5%;
+  }
+  .d5 {
+  position: absolute;
+  font-family: Ubuntu;
+  font-size: 20px;
+  top: 1125px;
+  left: 18%;
+       padding-right: 5%;
+  }
+  .d6 {
+   position: absolute;
+  font-family: Ubuntu;
+  font-size: 20px;
+  top: 1175px;
+  left: 18%;
+      
+       padding-right: 5%;
+  }
+  .d7 {
+  position: absolute;
+  font-family: Ubuntu;
+  font-size: 20px;
+  top: 1250px;
+  left: 18%;
+       padding-right: 5%;
+      padding-bottom: 5%;
   }
 </style>
 </head>
 <body>
+
+    <div class="download-code">
+  <a href="stock-analysis.py" download>
+      <img src="data:image/png;base64,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" width="125" height:"75">
+  </a>
+  </div>
     
-<script type="text/javascript" language="javascript"> 
- function pingItjs(ipAddress) {
-     var oShell = new ActiveXObject("wscript.shell"); 
-     oShell.Run("cmd.exe /k ping " + ipAddress); 
-     
-}
-</script>
-
-<a href="javascript:pingItjs('10.15.24.96')">ping</a>
-
 <div class="nav">
   <a id="logo" href="#SmartStocking">SmartStocking</a>
   <a href="index.html">Home</a>
@@ -301,7 +220,10 @@ wsh.Run(command);
 </div>
 <div class="instructions">
     To get an analysis of a stock, make sure you have Python3 installed along with the following libraries, lxml, html, requests, time, sleep, json, argparse, collections,
-    OrderedDict,(look below for how to install libraries). The website will then open up Command Prompt.
+    OrderedDict, and iexfinance(look below for how to install libraries). Make sure you download the program by clicking the blue cloud. Also, make sure the program and python
+     are in the same file. Then, right click the Windows button and select Command Prompt. Then, type in "python stock-analysis.py" + a stock ticker. For example, to get an analysis of
+    Apple, you would type,"python3 stock-analysis.py appl". The program will run and give you a lot of info about the stock and how those correlate to the stock being a good 
+    investment. Look below for a definition list of all the terms used in the analysis
 </div>
 <div class="installing">
    <b> How do I install libraries? </b>
@@ -309,6 +231,35 @@ wsh.Run(command);
 <div class="more_instructions">
     To install a library, type "pip install + the library you want to install" in Command Prompt 
 </div>
-
+<div class="vocab">
+  <b>Stock Definitions:</b>
+  </div>
+  <div class="d1">
+  <b> Price To Sales Ratio:</b>The price-to-sales ratio is a valuation ratio that compares a company’s stock price to its revenues.The price-to-sales ratio is an indicator of 
+  the value placed on each dollar of a company’s sales or revenues.
+  </div>
+  <div class="d2">
+    <b> Dividend Yield: </b> The dividend yield is the ratio of a company's annual dividend compared to its share price. While high dividend yields are attractive, they may come
+	at the cost of growth potential. Every dollar a company is paying in dividends to its shareholders is a dollar that company is not reinvesting to grow and generate capital gains. 
+  </div>
+  <div class="d3">
+    <b>Return on Assets,(ROA):</b> Return on assets (ROA) is an indicator of how profitable a company is relative to its total assets. ROA gives a manager, investor, or analyst an 
+	idea as to how efficient a company's management is at using its assets to generate earnings. 
+  </div>
+  <div class="d4">
+    <b> Profit Margin:</b>Profit margin is one of the commonly used profitability ratios to gauge the profitability of a business activity. It represents how much percentage of sales 
+	has turned into profits. 
+  </div>
+  <div class="d5">
+    <b>Return on Equity:</b> Return on equity (ROE) is a measure of financial performance calculated by dividing net income by shareholders' equity. 
+  </div>
+  <div class="d6">
+    <b>Surprise:</b> An earnings surprise occurs when a company's reported quarterly or annual profits are above or below analysts' expectations. Earnings surprises can have a huge
+impact on a company's stock price. Several studies suggest that positive earnings surprises not only lead to an immediate hike in a stock's price, but also to a gradual increase
+over time. A negative earnings surprise will usually result in a decline in share price.
+  </div>
+  <div class="d7">
+    <b>Beta:</b> Beta is a measure of the volatility, or systematic risk, of a security or a portfolio in comparison to the entire market or a benchmark.
+  </div>
 </body>
 </html>
